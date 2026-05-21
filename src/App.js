@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import {
-  User, Code2, Briefcase, GraduationCap, Mail, Phone,
+ User, Code2, GraduationCap, Mail, Phone,
   ChevronDown, Download, MapPin, Sparkles, ArrowRight, CheckCircle2,
-  Loader2, ArrowUp, Search, PenTool, Monitor, CheckSquare, Award, X
+  ArrowUp, Search, PenTool, Monitor, CheckSquare, Award, X
 } from 'lucide-react';
 
 export default function App() {
