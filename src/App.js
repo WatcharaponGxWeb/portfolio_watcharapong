@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import {
-  User, Code2, GraduationCap, Mail, Phone,
+  User, Code2, Briefcase, GraduationCap, Mail, Phone,
   ChevronDown, Download, MapPin, Sparkles, ArrowRight, CheckCircle2,
   Loader2, ArrowUp, Search, PenTool, Monitor, CheckSquare, Award, X
 } from 'lucide-react';
@@ -638,32 +638,8 @@ export default function App() {
                   </div>
                 </div>
 
-                <div className="flex gap-4 pt-4">
-                  <a href={`https://${personalInfo.linkedin}`} target="_blank" rel="noreferrer" className="w-12 h-12 flex items-center justify-center bg-white/5 rounded-full hover:bg-[#0A66C2] text-slate-300 hover:text-white transition-all duration-300 hover:-translate-y-1">
-                    <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
-  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/>
-</svg>
-                  </a>
-                </div>
-              </div>
 
-              <div className="bg-slate-900/50 p-8 sm:p-10 rounded-[2rem] border border-white/10 backdrop-blur-sm relative">
-                <div className="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-full blur-2xl opacity-50 z-0"></div>
-                <h3 className="text-2xl font-bold mb-8 relative z-10">ส่งข้อความด่วน</h3>
-                <form className="space-y-5 relative z-10" onSubmit={handleContactSubmit}>
-                  <div><input type="text" className="w-full px-5 py-4 bg-white/5 border border-white/10 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-transparent outline-none transition-all text-white placeholder-slate-500" placeholder="ชื่อหรือบริษัทของคุณ" required /></div>
-                  <div><input type="email" className="w-full px-5 py-4 bg-white/5 border border-white/10 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-transparent outline-none transition-all text-white placeholder-slate-500" placeholder="อีเมลสำหรับติดต่อกลับ" required /></div>
-                  <div><textarea rows="4" className="w-full px-5 py-4 bg-white/5 border border-white/10 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-transparent outline-none transition-all text-white placeholder-slate-500 resize-none" placeholder="รายละเอียดหรือตำแหน่งที่เปิดรับ..." required></textarea></div>
-                  
-                  <button disabled={isSubmitting || isSuccess} className={`w-full font-bold py-4 rounded-xl hover:shadow-lg transition-all duration-300 flex items-center justify-center gap-2 ${isSuccess ? 'bg-green-500 hover:shadow-green-500/25 text-white cursor-default' : 'bg-gradient-to-r from-indigo-600 to-blue-600 hover:shadow-indigo-500/25 text-white hover:-translate-y-0.5'}`}>
-                    {isSubmitting && <Loader2 className="w-5 h-5 animate-spin" />}
-                    {isSuccess && <CheckCircle2 className="w-5 h-5 animate-in zoom-in" />}
-                    {!isSubmitting && !isSuccess && 'ส่งข้อความ'}
-                    {isSubmitting && 'กำลังส่ง...'}
-                    {isSuccess && 'ส่งข้อความสำเร็จ!'}
-                  </button>
-                </form>
-              </div>
+             
             </div>
           </div>
         </section>
