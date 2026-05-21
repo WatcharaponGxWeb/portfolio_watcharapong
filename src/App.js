@@ -17,8 +17,7 @@ export default function App() {
   const [loopNum, setLoopNum] = useState(0);
   const typingSpeed = isDeleting ? 50 : 150;
   const [activeFilter, setActiveFilter] = useState('all');
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isSuccess, setIsSuccess] = useState(false);
+
   
   const [selectedProject, setSelectedProject] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
@@ -185,15 +184,7 @@ export default function App() {
     ? projects 
     : projects.filter(project => project.category === activeFilter);
 
-  const handleContactSubmit = (e) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setIsSuccess(true);
-      setTimeout(() => setIsSuccess(false), 3000); 
-    }, 1500);
-  };
+ 
 
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
