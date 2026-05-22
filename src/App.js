@@ -302,14 +302,23 @@ export default function App() {
                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </button>
                   
-                  <a 
-                    href="/resume.pdf" 
-                    download="Resume_Watcharapong.pdf"
-                    className="group px-8 py-3.5 bg-white border border-slate-200 text-slate-700 rounded-xl font-medium hover:border-indigo-200 hover:bg-indigo-50 transition-all duration-300 flex items-center justify-center gap-2 shadow-sm"
-                  >
-                    <Download className="w-4 h-4 text-slate-400 group-hover:text-indigo-600 transition-colors" />
-                    โหลด Resume (PDF)
-                  </a>
+                 <div className="relative group/resume">
+  <button className="group px-8 py-3.5 bg-white border border-slate-200 text-slate-700 rounded-xl font-medium hover:border-indigo-200 hover:bg-indigo-50 transition-all duration-300 flex items-center justify-center gap-2 shadow-sm">
+    <Download className="w-4 h-4 text-slate-400 group-hover:text-indigo-600 transition-colors" />
+    โหลด Resume (PDF)
+    <ChevronDown className="w-4 h-4 text-slate-400" />
+  </button>
+  <div className="absolute top-full mt-2 left-0 bg-white border border-slate-200 rounded-xl shadow-xl overflow-hidden opacity-0 invisible group-hover/resume:opacity-100 group-hover/resume:visible transition-all duration-200 z-50 w-full">
+    <a href="/resume-web.pdf" download="Resume_WebDeveloper_Watcharapong.pdf"
+      className="flex items-center gap-3 px-5 py-3 hover:bg-indigo-50 text-slate-700 hover:text-indigo-600 transition-colors text-sm font-medium">
+      💻 Web Developer
+    </a>
+    <a href="/resume-graphic.pdf" download="Resume_GraphicDesign_Watcharapong.pdf"
+      className="flex items-center gap-3 px-5 py-3 hover:bg-indigo-50 text-slate-700 hover:text-indigo-600 transition-colors text-sm font-medium border-t border-slate-100">
+      🎨 Graphic Design
+    </a>
+  </div>
+</div>
                 </div>
               </div>
               
