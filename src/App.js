@@ -309,11 +309,11 @@ export default function App() {
     <ChevronDown className="w-4 h-4 text-slate-400" />
   </button>
   <div className="absolute top-full mt-2 left-0 bg-white border border-slate-200 rounded-xl shadow-xl overflow-hidden opacity-0 invisible group-hover/resume:opacity-100 group-hover/resume:visible transition-all duration-200 z-50 w-full">
-    <a href="/resume-web.pdf" download="Resume_WebDeveloper_Watcharapong.pdf"
+    <a href="/ResumeWeb Developer.pdf" download="Resume_WebDeveloper_Watcharapong.pdf"
       className="flex items-center gap-3 px-5 py-3 hover:bg-indigo-50 text-slate-700 hover:text-indigo-600 transition-colors text-sm font-medium">
       💻 Web Developer
     </a>
-    <a href="/resume-graphic.pdf" download="Resume_GraphicDesign_Watcharapong.pdf"
+    <a href="/ResumeGraphic Design.pdf" download="Resume_GraphicDesign_Watcharapong.pdf"
       className="flex items-center gap-3 px-5 py-3 hover:bg-indigo-50 text-slate-700 hover:text-indigo-600 transition-colors text-sm font-medium border-t border-slate-100">
       🎨 Graphic Design
     </a>
